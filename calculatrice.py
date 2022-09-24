@@ -82,7 +82,6 @@ def parse_expression(calcul_verified: str) -> Noeud:
         if caract in mathematic_symbol:
             modif_graph(graph, temp_number, caract)
             temp_number = ""
-            temp_op = caract
         elif index == max_range:
             temp_number += caract
             modif_graph(graph, temp_number, "")
